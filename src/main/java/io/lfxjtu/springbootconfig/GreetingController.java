@@ -11,7 +11,6 @@ public class GreetingController {
     @Value("${my.greeting}")
     private String greetingMessage;
 
-
     @GetMapping("/greeting")
     public String greeting() {
         return greetingMessage;
